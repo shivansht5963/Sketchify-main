@@ -70,7 +70,7 @@ export const canvasToImage = async (stageRef: any): Promise<string> => {
 export const analyzeMathProblem = async (imageData: string, additionalContext: string = ""): Promise<string> => {
   try {
     // Get the model with the correct version
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     // Extract base64 data
     const imageBase64 = imageData.split(',')[1];

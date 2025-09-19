@@ -1,0 +1,228 @@
+===========================================
+SKETCHIFY SYSTEM ARCHITECTURE DOCUMENTATION
+===========================================
+
+Last Updated: September 19, 2025
+
+1. TECHNICAL STACK
+-----------------
+
+1.1 Frontend Core:
+• Framework: React 18+ with TypeScript
+• Build System: Vite
+• Package Manager: npm/yarn
+• Styling: 
+  - Tailwind CSS
+  - Emotion (CSS-in-JS)
+  - Material-UI (MUI) v5+
+• Animation: Framer Motion
+• Code Highlighting: react-syntax-highlighter
+• State Management: React Hooks
+• Routing: React Router v6
+
+1.2 Development Tools:
+• TypeScript Configuration: tsconfig.json
+• Code Quality: ESLint
+• Build Configuration: vite.config.ts
+• Deployment: Vercel (vercel.json)
+
+2. APPLICATION STRUCTURE
+-----------------------
+
+2.1 Directory Structure:
+/src
+  /components
+    /canvas
+      - DrawingLayer.tsx
+      - CanvasToolbar.tsx
+      - TextToolbox.tsx
+      /hooks
+        - useCanvasEvents.ts
+        - useDrawing.ts
+        - useHistory.ts
+        - useTool.ts
+      /shapes
+        - Line.tsx
+        - Rectangle.tsx
+    /home
+      - About.tsx
+      - Hero.tsx
+      - Tools.tsx
+      - Contact.tsx
+    /layout
+      - Navbar.tsx
+      - Footer.tsx
+    /ui
+      - FloatingCTA.tsx
+      - DecorationDots.tsx
+  /pages
+    - Home.tsx
+    - Dashboard.tsx
+    - Canvas.tsx
+    - CanvasAIAssistant.tsx
+    - CanvasToCode.tsx
+    - CanvasToImage.tsx
+    - CanvasMathSolver.tsx
+    - Register.tsx
+  /services
+    - aiAssistantService.ts
+    - aiCanvasToCodeService.ts
+    - aiCanvasToImageService.ts
+    - mathSolverService.ts
+    - imageSearchService.ts
+
+3. CORE FUNCTIONALITY MODULES
+---------------------------
+
+3.1 Canvas Module:
+• Primary Features:
+  - Real-time drawing capabilities
+  - Multi-tool support
+  - History management (undo/redo)
+  - Shape manipulation
+  - Text integration
+  - Event handling
+
+3.2 AI Services:
+• Capabilities:
+  - Sketch to code conversion
+  - Mathematical expression solving
+  - Image generation from sketches
+  - General AI assistance
+  - Image search and processing
+
+3.3 User Interface:
+• Components:
+  - Responsive navigation
+  - Dynamic toolbars
+  - Context-sensitive controls
+  - Theme support (dark/light)
+  - Animated transitions
+
+4. DATA FLOW ARCHITECTURE
+------------------------
+
+4.1 Client-Side Flow:
+[User Input] → [React Component] → [Service Layer] → [External API] → [State Update] → [UI Update]
+
+4.2 Feature-Specific Workflows:
+
+Canvas to Code:
+[Sketch Input] → [Canvas Component] → [Image Processing] → [AI Service] → [Code Generation] → [Display]
+
+Math Solver:
+[Math Sketch] → [Canvas Component] → [Image Processing] → [Math Service] → [Solution] → [Display]
+
+Image Generation:
+[Sketch Input] → [Canvas Component] → [Image Processing] → [AI Service] → [Image] → [Display]
+
+5. PERFORMANCE OPTIMIZATION
+--------------------------
+
+5.1 Code-Level Optimization:
+• Implementation:
+  - Code splitting
+  - Dynamic imports
+  - Tree shaking
+  - Bundle size optimization
+  - Lazy loading
+  - Memory management
+  - Resource caching
+
+5.2 Runtime Optimization:
+• Techniques:
+  - Canvas operation optimization
+  - Component lazy loading
+  - Resource pre-loading
+  - Cache management
+  - Memory cleanup
+
+6. SECURITY MEASURES
+-------------------
+
+6.1 API Security:
+• Features:
+  - Secure key management
+  - Rate limiting
+  - Request validation
+  - Data encryption
+  - Access control
+
+6.2 Data Protection:
+• Measures:
+  - Client-side encryption
+  - Secure storage
+  - Privacy controls
+  - Data sanitization
+
+7. CROSS-PLATFORM SUPPORT
+------------------------
+
+7.1 Responsive Design:
+• Implementation:
+  - Mobile-first approach
+  - Fluid layouts
+  - Breakpoint management
+  - Touch interface support
+  - Device-specific optimizations
+
+7.2 Browser Compatibility:
+• Support:
+  - Modern browser optimization
+  - Fallback implementations
+  - Progressive enhancement
+  - Feature detection
+
+8. DEVELOPMENT WORKFLOW
+----------------------
+
+8.1 Build Process:
+• Commands:
+  npm run dev      : Development server
+  npm run build    : Production build
+  npm run type-check: TypeScript validation
+  npm run lint     : Code linting
+
+8.2 Deployment Pipeline:
+[Code Push] → [Type Check] → [Lint] → [Build] → [Test] → [Deploy]
+
+9. FUTURE SCALABILITY
+--------------------
+
+9.1 Planned Features:
+• Upcoming:
+  - Real-time collaboration
+  - Advanced AI integration
+  - Extended tool support
+  - Performance monitoring
+  - Enhanced security
+
+9.2 Architecture Expansion:
+• Plans:
+  - Microservices integration
+  - Enhanced caching
+  - Advanced monitoring
+  - Automated scaling
+
+10. ERROR HANDLING
+-----------------
+
+10.1 Client-Side:
+• Implementation:
+  - Component error boundaries
+  - Service layer error handling
+  - User feedback systems
+  - Error logging
+  - Recovery mechanisms
+
+10.2 API Error Management:
+• Features:
+  - Status code handling
+  - Error response processing
+  - Retry mechanisms
+  - Fallback solutions
+  - Error reporting
+
+===========================================
+END OF DOCUMENTATION
+===========================================
