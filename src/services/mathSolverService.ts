@@ -88,7 +88,7 @@ export const analyzeMathProblem = async (imageData: string, additionalContext: s
     
     ${additionalContext ? `Additional context: ${additionalContext}` : ''}
     
-    Provide your solution in this format:
+    Provide your solution in this format, strictly follow this format only:
     1. First identify what type of math problem this is
     2. List the steps to solve it clearly and logically and strictly make sure that it is user friendly and human readable and no unnecessary tags or symbols are there in the solution.
     3. Provide the final answer clearly marked as "Solution: [answer]"
