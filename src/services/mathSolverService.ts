@@ -84,7 +84,7 @@ export const analyzeMathProblem = async (imageData: string, additionalContext: s
     };
 
     // Create a math-focused prompt
-    const mathPrompt = `You are an expert math teacher and solver. Please solve the math problem shown in this image with detailed step-by-step explanations. 
+    const mathPrompt = `You are an expert math teacher and solver. Please solve the math problem shown in this image with detailed step-by-step explanations. please check first and be smart while calculating detect number carefully. 
     
     ${additionalContext ? `Additional context: ${additionalContext}` : ''}
     
