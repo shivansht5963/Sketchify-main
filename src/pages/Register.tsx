@@ -61,7 +61,7 @@ const Register: React.FC = () => {
                 Create Account
               </Typography>
               <Typography variant="body1" color="text.secondary">
-                Join Sketchify and start creating amazing things!
+                Join Nexa and start creating amazing things!
               </Typography>
             </Box>
 

@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const About: React.FC = () => {
   const theme = useTheme();
   
-  // Feature list for "Why Choose Sketchify"
+  // Feature list for "Why Choose Nexa"
   const features = [
     {
       icon: <AutoFixHighIcon />,
@@ -130,7 +130,7 @@ const About: React.FC = () => {
                     lineHeight: 1.8,
                   }}
                 >
-                  Sketchify began with a simple question: <strong>what if turning a sketch into functional code or finding similar images was as easy as drawing?</strong> Founded in 2023, our team of AI researchers and design enthusiasts set out to bridge the gap between creative expression and technological implementation.
+                  Nexa began with a simple question: <strong>what if turning a sketch into functional code or finding similar images was as easy as drawing?</strong> Created for SYNAPSE 2025, our team set out to bridge the gap between creative expression and technological implementation.
                 </Typography>
                 
                 <Typography 

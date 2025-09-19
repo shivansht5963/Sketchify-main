@@ -41,18 +41,52 @@ const Footer: React.FC = () => {
                   mb: 2,
                 }}
               >
-                <img
-                  src="/Sketchify.png"
-                  alt="Sketchify Logo"
-                  style={{
-                    width: 120,
-                    height: 'auto',
-                    filter: 'drop-shadow(0 0 12px rgba(255,255,255,0.4))',
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
                   }}
-                />
+                >
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontWeight: 800,
+                      letterSpacing: '0.1em',
+                      background: theme.palette.mode === 'dark'
+                        ? 'linear-gradient(45deg, #fff, #f0f0f0)'
+                        : 'linear-gradient(45deg, #1A2027, #0A1929)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}
+                  >
+                    NEXA
+                    <Box
+                      component="span"
+                      sx={{
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        ml: 1,
+                        opacity: 0.9,
+                        background: theme.palette.mode === 'dark' ? '#fff' : '#1A2027',
+                        px: 1,
+                        py: 0.5,
+                        borderRadius: '4px',
+                        color: theme.palette.mode === 'dark' ? '#4ECDC4' : '#4ECDC4',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}
+                    >
+                      Synapse
+                    </Box>
+                  </Typography>
+                </Box>
               </Box>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                Transform your sketches into reality with AI-powered tools. Draw, analyze, and create with Sketchify.
+                Transform your sketches into reality with AI-powered tools. Draw, analyze, and create with Nexa - Built for SYNAPSE 2025.
               </Typography>
               <Stack direction="row" spacing={2}>
                 {[
@@ -175,7 +209,7 @@ const Footer: React.FC = () => {
           }}
         >
           <Typography variant="body2" color="text.secondary">
-            © {new Date().getFullYear()} Sketchify. All rights reserved.
+            © {new Date().getFullYear()} Nexa - A SYNAPSE Project. All rights reserved.
           </Typography>
         </Box>
       </Container>

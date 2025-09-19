@@ -99,7 +99,7 @@ const Dashboard: React.FC = () => {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              Welcome to Sketchify
+              Welcome to Nexa
             </Typography>
             <Typography
               variant="h6"

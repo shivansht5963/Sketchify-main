@@ -161,7 +161,7 @@ const ToolsShowcase: React.FC = () => {
                 lineHeight: 1.6,
               }}
             >
-              Sketchify provides a suite of powerful AI tools to transform your drawings into actionable results.
+              Nexa provides a suite of powerful AI tools to transform your drawings into actionable results.
             </Typography>
           </motion.div>
         </Box>

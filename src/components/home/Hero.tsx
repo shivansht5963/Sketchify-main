@@ -213,8 +213,8 @@ const Hero: React.FC = () => {
                     textFillColor: 'transparent'
               }}
             >
-                  Sketch and  <br />
-                  Search with AI 
+                  Nexa - AI Canvas <br />
+                  Built for SYNAPSE
             </Typography>
                 
                 {/* Text animation container with more height and spacing */}

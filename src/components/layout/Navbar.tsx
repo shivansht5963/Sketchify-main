@@ -23,7 +23,7 @@ const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'how-it-works', label: 'How It Works' },
   { id: 'tools', label: 'Tools' },
-  { id: 'about', label: 'Why Choose Sketchify' },
+  { id: 'about', label: 'Why Choose Nexa' },
   { id: 'contact', label: 'Contact' }
 ];
 
@@ -135,45 +135,52 @@ const Navbar: React.FC = () => {
           }}
           onClick={() => scrollToSection('home')}
         >
-          <SpinningLogo
-            src="/Sketchify-removebg2.png"
-            alt="Sketchify Logo"
-            initial={{ 
-              opacity: 0,
-              scale: 0.5,
-              rotate: -180
-            }}
-            animate={{ 
-              opacity: 1,
-              scale: 1,
-              rotate: 0,
-            }}
-            transition={{
-              duration: 1.2,
-              ease: "easeOut",
-              type: "spring",
-              stiffness: 100
-            }}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             style={{
-              width: 190,
-              height: 'auto',
-              objectFit: 'contain',
-              filter: `
-                drop-shadow(0 0 12px rgba(255,255,255,0.4))
-                drop-shadow(0 0 8px rgba(0,0,0,0.3))
-                drop-shadow(0 4px 12px rgba(78,205,196,0.5))
-              `,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px'
             }}
-            whileHover={{ 
-              scale: 1.1,
-              rotate: 5,
-              transition: { duration: 0.3 }
-            }}
-            whileTap={{ 
-              scale: 0.9,
-              rotate: -5
-            }}
-          />
+          >
+            <Box
+              component="span"
+              sx={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '2rem',
+                fontWeight: 800,
+                letterSpacing: '0.1em',
+                background: 'linear-gradient(45deg, #fff, #f0f0f0)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))',
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              NEXA
+              <Box
+                component="span"
+                sx={{
+                  fontSize: '0.8rem',
+                  fontWeight: 600,
+                  ml: 1,
+                  opacity: 0.9,
+                  background: '#fff',
+                  px: 1,
+                  py: 0.5,
+                  borderRadius: '4px',
+                  color: '#4ECDC4',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}
+              >
+                Synapse
+              </Box>
+            </Box>
+          </motion.div>
         </Box>
         
         <Box sx={{ display: { xs: 'block', md: 'none' } }}>
