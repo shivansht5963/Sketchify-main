@@ -32,7 +32,7 @@
     "framer-motion": "^11.18.2",
     "imagepig": "^1.0.10",
     "konva": "^8.4.3",
-    "next": "^15.2.3",
+    "next": "15.2.8",
     "react": "^18.3.1",
     "react-color": "^2.19.3",
     "react-dom": "^18.3.1",
